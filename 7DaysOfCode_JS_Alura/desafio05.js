@@ -5,7 +5,7 @@ const readline = require("readline").createInterface({
 
 const listaDeCompras = {
   categorias: {
-    frutas: ['maca', 'pera'],
+    frutas: [],
     laticinios: [],
     congelados: [],
     doces: [],
@@ -13,14 +13,7 @@ const listaDeCompras = {
   },
 };
 
-// let categoriasListadas = "";
 const categoriasListadas = Object.keys(listaDeCompras.categorias);
-// separarCategorias.forEach(categoria => categoriasListadas += categoria.toString())
-
-// listaDeCompras.categorias.frutas.push("maca");
-// console.log(separarCategorias.toString())
-// console.log(typeof listaDeCompras.categorias)
-// console.log(Object.keys(listaDeCompras.categorias));
 
 const perguntaInicial = function () {
   readline.question(
@@ -30,9 +23,12 @@ const perguntaInicial = function () {
         perguntaAddItem();
       } else if (resp.toLocaleLowerCase() == "nao") {
         console.log("Aqui esta sua lista de compras: ");
-        console.log(`Lista de Compras:
-    ${listaDeCompras.categorias.frutas}
-        `);
+        console.log(`Lista de Compras:`);
+        categoriasListadas.forEach((categoria, i) => {
+          console.log(`    ${categoria}:`);
+          console.log(`        ${listaDeCompras.categorias[categoria]}`);
+        });
+
         readline.close();
       } else {
         console.log("Nao entendi sua resposta");
