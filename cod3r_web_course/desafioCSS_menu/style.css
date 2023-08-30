@@ -1,4 +1,50 @@
+*{
+    color: white;
+    text-decoration: none;
+    /* font-size: 1.1rem; */
+}
+
 body {
+    margin: 0;
     font-family: 'Oswald', sans-serif;
-    background-color: black;
+    background-color: lightgray;
+}
+
+.cabecalho {
+    background-color: #2b2b2b;
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid #8aa5ff;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+    /* justify-self: flex-start; */
+}
+
+.autenticacao {
+    /* display: inline-block; */
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.autenticacao a {
+    padding: 0 10px;
+}
+
+.autenticacao .botao {
+    background-color: #fc3a3a;
+    padding: 5px 15px;
+    border-radius: 15px;
 }
