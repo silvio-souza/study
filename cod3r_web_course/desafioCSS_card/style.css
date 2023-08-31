@@ -19,10 +19,6 @@ body {
     border: solid 2px black;
 }
 
-.curso-list {
-    /* display: flex; */
-}
-
 .curso {
     float: left;
     /* display: inline-block; */
