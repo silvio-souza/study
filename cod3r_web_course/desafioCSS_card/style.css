@@ -20,54 +20,59 @@ body {
 }
 
 .curso-list {
-    display: flex;
+    /* display: flex; */
 }
 
 .curso {
+    float: left;
+    /* display: inline-block; */
+    vertical-align: top;
     width: 265px;
     height: 300px;
-    margin: 0 22px;
+    margin: 10px 22px;
     padding: 5px;
     border: solid 1px lightgray;
 
-    /* background-color: #fafafa; */
     box-shadow: 0px 0px 11px 0px #615f61;
 
 }
 
 .curso img {
     width: 100%;
+    max-height: 50%;
 }
 
 .curso-info {
     padding: 10px;
-    
+    height: 90px;
+    overflow: hidden;
 }
 
 .curso-info h4 {
     font-size: 1.2rem;
-    /* font-weight: 500; */
+    /* font-weight: 600; */
 }
 .curso p {
     margin: 15px 0;
 }
 
 .curso-preco {
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-end; */
 
-    padding-right: 10px;
+    float: right;
+    padding: 20px 10px;
 }
 
 .preco-de {
-    color: #953232;
+    color: firebrick;
     text-decoration: line-through;
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 
 .preco-por {
-    color: #156a0d;
+    color: green;
     font-size: 1.3rem;
     font-weight: bold;
     
