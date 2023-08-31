@@ -47,6 +47,25 @@
       </aside>
     </header>
 
-    <script></script>
+    <script>
+      //   addEventListener("hashchange", () => {
+      //     alert(location.hash);
+      //   });
+
+      window.onhashchange = (e) => {
+        const oldURL = e.oldURL.split("#")[1];
+        const newURL = e.newURL.split("#")[1];
+        // console.log(e);
+
+        const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`);
+        const newLink = document.querySelector(`.menu a[href='#${newURL}']`);
+
+        // if (oldLink) {
+        //   oldLink.classList.remove("selected");
+        // }
+        oldLink && oldLink.classList.remove("selected");
+        newLink && newLink.classList.add("selected");
+      };
+    </script>
   </body>
 </html>
