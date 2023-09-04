@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #121417;
+    color: white;
+    /* max-width: 1440px; */
+    height: 100%;
+
+    font-family: Overpass;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    background-color: #12141752;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.box {
+    background-color: #252d37;
+    width: 350px;
+    height: 350px;
+
+    padding: 25px;
+    border-radius: 35px;
+    /* height: 50%; */
+    /* margin: auto; */
+}
