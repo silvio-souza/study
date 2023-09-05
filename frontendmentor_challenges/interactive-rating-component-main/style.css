@@ -65,6 +65,18 @@ p {
     background-color: #12141752;
     padding: 15px 20px;
     border-radius: 50%/50%;
+
+    transition: 0.3s;
+}
+
+.box ul li:hover {
+    background-color: #fb7413;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box ul li.selected {
+    background-color: #959eac;
 }
 
 .box button {
@@ -80,5 +92,13 @@ p {
     padding: 15px;
     border: none;
     border-radius: 30px;
+    transition: 0.3s;
     
+}
+
+.box button:hover {
+    cursor: pointer;
+    color: #fb7413;
+    background-color: white;
+    transition: 0.3s;
 }
