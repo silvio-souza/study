@@ -14,12 +14,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* align-content: center; */
+}
+
+.box {
+    background-color: #252d37;
+    width: 350px;
+    height: 350px;
+
+    padding: 25px;
+    border-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    /* height: 50%; */
+    /* margin: auto; */
 }
 
 .star {
     background-color: #12141752;
-    padding: 10px;
-    border-radius: 50%;
+    width: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
 }
 
 h2 {
@@ -32,14 +49,36 @@ p {
     margin: 0;
 }
 
+.box ul {
+    display: flex;
+    list-style: none;
 
-.box {
-    background-color: #252d37;
-    width: 350px;
-    height: 350px;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0;
+    
+}
 
-    padding: 25px;
-    border-radius: 35px;
-    /* height: 50%; */
-    /* margin: auto; */
+.box ul li {
+    display: flex;
+    
+    background-color: #12141752;
+    padding: 15px 20px;
+    border-radius: 50%/50%;
+}
+
+.box button {
+    /* align-self: center; */
+    /* justify-self: flex-end; */
+
+    background-color: #fb7413;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    /* margin-top: 20px; */
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    
 }
