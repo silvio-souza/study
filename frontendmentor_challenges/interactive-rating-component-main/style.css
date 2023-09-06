@@ -102,3 +102,7 @@ p {
     background-color: white;
     transition: 0.3s;
 }
+
+#thanksBox {
+    display: none;
+  }
