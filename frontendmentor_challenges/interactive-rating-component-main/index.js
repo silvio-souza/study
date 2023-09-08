@@ -74,6 +74,9 @@ const submitEl = document.querySelector("#submitBtn");
 submitEl.addEventListener("click", () => {
   if (evaluationSelected) {
     document.querySelector("#ratingBox").style.display = "none";
-    document.querySelector("#thanksBox").style.display = "revert";
+    document.querySelector("#thanksBox").style.display = "flex";
+    document.querySelector(
+      "#thanksBox span"
+    ).innerText = `You selected ${evaluationSelected} out of 5`;
   }
 });

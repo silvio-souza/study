@@ -20,13 +20,15 @@ body {
 .box {
     background-color: #252d37;
     width: 350px;
-    height: 350px;
+    height: 400px;
 
     padding: 25px;
     border-radius: 35px;
 
     display: flex;
     flex-direction: column;
+
+    /* align-items: center; */
     /* height: 50%; */
     /* margin: auto; */
 }
@@ -45,8 +47,10 @@ h2 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 0;
+
+    color: #9ea4b0;
 }
 
 .box ul {
@@ -62,6 +66,7 @@ p {
 .box ul li {
     display: flex;
     
+    color: #7d8593;
     background-color: #12141752;
     padding: 15px 20px;
     border-radius: 50%/50%;
@@ -71,12 +76,14 @@ p {
 
 .box ul li:hover {
     background-color: #fb7413;
+    color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .box ul li.selected {
     background-color: #959eac;
+    color: white;
 }
 
 .box button {
@@ -105,4 +112,27 @@ p {
 
 #thanksBox {
     display: none;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+#thanksBox img {
+    width: 60%;
+}
+
+#thanksBox span {
+    background-color: #12141752;
+    color: #fb7413;
+    padding: 10px;
+    margin-top: 10px;
+
+    border-radius: 25px;
+}
+
+#thanksBox h2 {
+    margin: 0 0 -10px;
+}
+
+  #thanksBox p {
+    text-align: center;
   }
