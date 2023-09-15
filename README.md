@@ -1,2 +1,2 @@
 # study
-Study and challenges repo
+Study and challenges repo 
